@@ -33,6 +33,7 @@
         android:fontFamily="sans-serif-medium"
         android:text="@string/nome_completo"
         android:textStyle="bold"
+        android:labelFor="@id/input_nome"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txt_cadastro" />
 
@@ -55,11 +56,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
+        android:labelFor="@id/input_telefone"
         android:fontFamily="sans-serif-medium"
         android:text="@string/telefone"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_nome" />
+
     <EditText
         android:id="@+id/input_telefone"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -67,9 +70,9 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
-        android:autofillHints="name"
+        android:autofillHints="phone"
         android:background="@drawable/input_textbox"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt_nome_completo" />
+        app:layout_constraintTop_toBottomOf="@id/txt_telefone" />
 </androidx.constraintlayout.widget.ConstraintLayout>
